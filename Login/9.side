@@ -1,0 +1,1019 @@
+{
+  "id": "8b6131eb-9033-4fe5-b5a0-1f35421fbb7a",
+  "version": "2.0",
+  "name": "GROW",
+  "url": "https://growdiaries.com",
+  "tests": [{
+    "id": "89ea05d3-4b2d-4103-a4bd-9c9e5cd797a1",
+    "name": "3) Error information when entering invalid data",
+    "commands": [{
+      "id": "c34fe9df-36df-4f90-b60f-b1c97387562a",
+      "comment": "",
+      "command": "open",
+      "target": "/start",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0ed7c0e-c7ed-4227-8a36-2c77e80bb56e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90b9120f-24fe-4470-92c3-e1dd31b191c6",
+      "comment": "",
+      "command": "click",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "814e6a87-6543-4ba0-9e8f-85a9f80f8c1b",
+      "comment": "",
+      "command": "type",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "DSFSDFSDFS"
+    }, {
+      "id": "c01e7053-ca7b-4795-9554-f598bf3e36d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56e7e140-38a7-4e62-b5e3-40818f0306ee",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "DSFSDFSDFS"
+    }, {
+      "id": "540a7361-1974-4489-9060-640279fc413f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.green",
+      "targets": [
+        ["css=.green", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52182c91-415f-43da-82c7-e55af6fc3d2d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.img_logo",
+      "targets": [
+        ["css=.img_logo", "css:finder"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "532afcd5-6ace-4357-8560-f096455229b3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='ohsnap']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "Invalid Login or Password"
+    }, {
+      "id": "a24bc06f-e739-4e89-8271-04e85838bbf0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c0334dab-889d-4d8d-aa38-622cccda2625",
+    "name": "2) (negative test) Validation with empty fields ",
+    "commands": [{
+      "id": "04f0bd58-7975-417e-91fd-2430b8a97a07",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e29488a-c823-4058-928f-bc10921fb19b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ec34af9-34ee-4800-817b-ced758353549",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69d094f6-3487-4438-a814-d2e88e011196",
+      "comment": "",
+      "command": "click",
+      "target": "css=.green",
+      "targets": [
+        ["css=.green", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc256f7-dee5-49e4-9388-e7a25e8ddaf4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.green",
+      "targets": [
+        ["css=.green", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": "Log In"
+    }, {
+      "id": "ba494042-31c6-4d1e-af12-0be72d0512d2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a1b95f13-1971-4d62-a149-4230f6377407",
+    "name": "1) Login button> go to the login and password form page",
+    "commands": [{
+      "id": "0f8273e9-fed3-46ff-9b5a-19cc3ecc211d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1950a34d-39d6-48b9-894b-08fc4bb4ad88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73a636b0-52b1-470e-b408-620efa976d52",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7448e9b-7ea7-4df8-b8a8-43254260ebbd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.green",
+      "targets": [
+        ["css=.green", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": "Log In"
+    }, {
+      "id": "6e695dde-e5a9-482c-9b3b-2c2f346d1f5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e6e72edb-b7e8-4f04-a3c7-96d2b97a0f69",
+    "name": "4) Successful login> go to previous page",
+    "commands": [{
+      "id": "fc07c82b-b3fc-42e4-b9ad-28a2a6ca85cc",
+      "comment": "",
+      "command": "open",
+      "target": "/start",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83145b46-e622-43d9-b62d-f7bed5ae0fe0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a87753d6-e47a-4cf7-92d2-49d1a46b7f5d",
+      "comment": "",
+      "command": "click",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa075c2c-d61e-4efd-9e09-f1cb0d2670f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Doctor_qwerty"
+    }, {
+      "id": "37b28d25-c685-4d2f-9066-1275f8bf6346",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "704035cc-2831-4e19-8038-b63f03918ecf",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "zaq1xsw2cde3"
+    }, {
+      "id": "bc7ae9c8-dbfe-4018-8005-d8a215b17c4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.green",
+      "targets": [
+        ["css=.green", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e3c50ee-5b53-416f-8204-d12dddd91767",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row_item:nth-child(1) .report_box_item:nth-child(3) .img",
+      "targets": [
+        ["css=.row_item:nth-child(1) .report_box_item:nth-child(3) .img", "css:finder"],
+        ["xpath=//img[@alt='Critical Orange Punch']", "xpath:img"],
+        ["xpath=//body[@id='body_page']/div[3]/div[2]/div[2]/div/div[2]/div/div/div[3]/a/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bced0508-64e7-487d-b0ca-bc061db1b6c0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.row_item:nth-child(1) .report_box_item:nth-child(3) .img",
+      "targets": [
+        ["css=.row_item:nth-child(1) .report_box_item:nth-child(3) .img", "css:finder"],
+        ["xpath=//img[@alt='Critical Orange Punch']", "xpath:img"],
+        ["xpath=//body[@id='body_page']/div[3]/div[2]/div[2]/div/div[2]/div/div/div[3]/a/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c13c6ac-b62c-45d2-b581-0c0aeace7d28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign",
+      "targets": [
+        ["css=.sign", "css:finder"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[2]/i", "xpath:idRelative"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9811ca3e-2e94-4286-9f65-fccc74c5942f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2a1313f6-12de-46bc-8799-9cca7edafbe3",
+    "name": "6) Message with invalid data",
+    "commands": [{
+      "id": "efa30c54-cd97-4f0d-a78b-a3b4376cda2e",
+      "comment": "",
+      "command": "open",
+      "target": "/start",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca486c23-a9cf-422d-803e-ee49f18f7f55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afaf5362-7034-4434-93b4-dd2a4a977dfe",
+      "comment": "",
+      "command": "click",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe620f30-f785-44a0-89b8-4381bb1f45ef",
+      "comment": "",
+      "command": "type",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "cvxcvxcv"
+    }, {
+      "id": "8378013b-a154-4966-8478-2e6013588366",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb08072b-2745-480e-8260-56f1cb69dcf3",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=.field:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "xcvxcvv"
+    }, {
+      "id": "57d8cd6c-1ab5-4e32-af73-1a4e7a78baa5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.green",
+      "targets": [
+        ["css=.green", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d67fa53b-0648-4b20-a4e1-a67d1e646d28",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='ohsnap']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "Invalid Login or Password"
+    }, {
+      "id": "7312e52a-6197-4920-9e65-3509817fef89",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5ee88ce9-604a-403f-8138-3eb4f1307f42",
+    "name": "7) login button> name logic",
+    "commands": [{
+      "id": "b90b21a0-6bee-4a9b-923c-847ae5383f60",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "303f57f5-b038-4cfd-bde6-8149db31b14e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7341c6d3-8392-4d0b-86d3-7067fc4a922b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ed89982-9a1c-4ef2-a0f1-4b7f6177233f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.field:nth-child(1) > label",
+      "targets": [
+        ["css=.field:nth-child(1) > label", "css:finder"],
+        ["xpath=//form[@id='myForm']/div[2]/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "67645492-09f9-46d2-a1b7-8a2350afb751",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "819104bd-e362-495e-b6e2-ed9dc8cd6a94",
+    "name": "8) The button has forgotten the password> leads to the password recovery form.",
+    "commands": [{
+      "id": "1ed32a2e-6e76-45b7-a520-44b398fd508a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f107ceb5-a704-45ea-89c5-6c3d5767c044",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1238beb9-aee3-45ff-beaa-c99f55a47e2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bbf6488-f576-48ab-a2f3-188905f2fb96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.forgot_form_login", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='myForm']/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../start?action=forgot_password')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07d21d01-d0cb-457c-abad-325263c8ee16",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Email')]", "xpath:innerText"]
+      ],
+      "value": "Email"
+    }, {
+      "id": "7969cb7b-0c46-43c6-9e08-159773bb36fb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "af2df1ab-5c7e-4810-a601-4d20bf699c6d",
+    "name": "9) when you cancel the entry and press the back button> go to the last page",
+    "commands": [{
+      "id": "c9c429d6-93c6-45fb-97cb-bcc1fa421c36",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14ba1a9e-beda-4ac4-b219-c1110d4c945a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbcc59b7-c46a-46d1-ae1d-a7729fb76648",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a67a2813-f57d-4d23-b361-2e839fd56ac1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.forgot_form_login", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='myForm']/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../start?action=forgot_password')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6a3756a-716b-4a7b-a08b-2e7417ac3c09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.basic",
+      "targets": [
+        ["css=.basic", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93bbcf8f-2257-4ad3-9d1e-fcb3dbcf306e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b58f7986-0bed-4023-bffb-b6ec9c3475e7",
+    "name": "10) Password recovery: wrong address format > Error Message",
+    "commands": [{
+      "id": "47d52d11-3deb-48a8-a3e7-6c070bf85b0b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a4a47d7-f108-466c-8dfe-fd18f4fd489b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e530c34-e266-4655-9658-84dd3322e7f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b258d767-7c72-4819-affd-af335adc22c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.forgot_form_login", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='myForm']/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../start?action=forgot_password')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c139c806-78fa-48e7-83ac-76e6d4338960",
+      "comment": "",
+      "command": "click",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c305c30-5d0e-4a9d-a833-8d3d9d78b519",
+      "comment": "",
+      "command": "type",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dfgfdgadg"
+    }, {
+      "id": "951eb203-919a-4cfa-866f-4ce6a25e93a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Get password reset email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52771f9d-0614-4a63-93a8-c7259c2ccabc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='ohsnap']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "Email address is not valid"
+    }, {
+      "id": "8a0d10b2-a1e1-46dd-8051-b78d48a60faa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9bfd0afa-b51e-4a93-9a9f-e61e0ff098d2",
+    "name": "11) Password recovery: address not in the database> Error message",
+    "commands": [{
+      "id": "4d418229-5e89-4906-bfc5-a91266dfd4b6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed3b81e7-dcd7-4ad3-b6e5-fc5f29abe41d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95d3dd5e-2ea8-4907-bc89-3736097ea481",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.menu_icon:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/start')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a97d052-b7de-4a6c-a6ec-1e75239c0737",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.forgot_form_login", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='myForm']/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../start?action=forgot_password')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1879c48-e4d6-4872-b46f-03d49f02b3fc",
+      "comment": "",
+      "command": "click",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50126e3f-e6bb-42eb-a4c7-bd4dbdab9d5e",
+      "comment": "",
+      "command": "type",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dfgdfgdfg@fgdfgdf.com"
+    }, {
+      "id": "94ec32eb-0849-492d-82ac-cea2a8eee847",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Get password reset email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f921b2c-47bd-4245-9779-f0dbe0136fb2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='ohsnap']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "We could not find this Email"
+    }, {
+      "id": "00119802-24c6-450a-8054-cc710627fa0c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0b029b55-6605-4d5e-8306-5fd35efee4d9",
+    "name": "12) Password recovery: a letter arrives to change the password",
+    "commands": [{
+      "id": "f3ce581a-8a88-4769-8641-a0f2c11eeeb7",
+      "comment": "",
+      "command": "open",
+      "target": "/start",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa2f0390-b6e9-415b-8f94-d305498299aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6048dbd0-6f2d-4349-b6a2-f6005ff61933",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forgot password?",
+      "targets": [
+        ["linkText=Forgot password?", "linkText"],
+        ["css=.forgot_form_login", "css:finder"],
+        ["xpath=//a[contains(text(),'Forgot password?')]", "xpath:link"],
+        ["xpath=//form[@id='myForm']/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../../start?action=forgot_password')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Forgot password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6ea4671-ee38-4ae0-a77a-dab51e378725",
+      "comment": "",
+      "command": "click",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db657ce8-edba-43c8-9742-f37f598cf4d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=mail",
+      "targets": [
+        ["name=mail", "name"],
+        ["css=.field > input", "css:finder"],
+        ["xpath=//input[@name='mail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "kainalexkain@gmail.com"
+    }, {
+      "id": "692d067f-400e-4ece-9748-e5f72e95bada",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Get password reset email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b799acb0-2567-480e-b397-140353decf6b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Password reset email sent. Check your SPAM folder')]", "xpath:innerText"]
+      ],
+      "value": "Password reset email sent. Check your SPAM folder"
+    }, {
+      "id": "7867fae3-8ab7-4ede-9b54-2084a19cf750",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "83bacc7b-49dc-4cfc-9be2-c628a4ad350e",
+    "name": "13) Login in  Twitter",
+    "commands": [{
+      "id": "752717ff-4d16-41a6-843b-c2e9c73dd227",
+      "comment": "",
+      "command": "open",
+      "target": "/start",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "731b5c01-aece-46fb-b6d7-d73be076c043",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31ef352c-698f-467a-b71a-c3c708ab0ab7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btns_set > a:nth-child(1) > img",
+      "targets": [
+        ["css=.btns_set > a:nth-child(1) > img", "css:finder"],
+        ["xpath=//form[@id='myForm']/div[5]/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4be6040-83e1-4b35-823c-3eb987e127c5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Cannabis grow journals. Track your grow - GrowDiaries",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01e8de62-e6bc-4165-a5ad-914b7dfffcbe",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.small",
+      "targets": [
+        ["css=.small", "css:finder"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Начать Мой Репорт')]", "xpath:innerText"]
+      ],
+      "value": "Начать Мой Репорт"
+    }, {
+      "id": "b417bd64-c451-4969-ae7c-7015188507c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign",
+      "targets": [
+        ["css=.sign", "css:finder"],
+        ["xpath=//body[@id='body_page']/div/div[2]/a[3]/i", "xpath:idRelative"],
+        ["xpath=//a[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc6a35e-f6e0-4346-9930-5fa77475761e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3dfe6bb0-d7f6-4fe8-b76c-129c5614c3da",
+    "name": "14) Login in Facebook",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "76467e38-2cce-4075-a7aa-defa5247cb4d",
+    "name": "Login",
+    "persistSession": false,
+    "parallel": true,
+    "timeout": 300,
+    "tests": ["af2df1ab-5c7e-4810-a601-4d20bf699c6d"]
+  }],
+  "urls": ["https://growdiaries.com/", "https://growdiaries.com/grow-lights/cirrus-led-grow-lights"],
+  "plugins": []
+}
